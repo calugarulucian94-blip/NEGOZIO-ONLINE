@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negozio Online</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Negozio Online</h1>
+        <button id="cartBtn">🛒 Carrello (<span id="cartCount">0</span>)</button>
+    </header>
+
+    <main>
+        <h2>Prodotti</h2>
+        <div id="productList" class="products"></div>
+    </main>
+
+    <!-- Modale prodotto -->
+    <div id="productModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <img id="modalImg" />
+            <h3 id="modalName"></h3>
+            <p id="modalPrice"></p>
+            <button id="addToCartBtn">Aggiungi al carrello</button>
+        </div>
+    </div>
+
+    <!-- Carrello -->
+    <div id="cartModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeCart">&times;</span>
+            <h3>Il tuo carrello</h3>
+            <ul id="cartItems"></ul>
+            <h4>Totale: €<span id="cartTotal">0.00</span></h4>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
